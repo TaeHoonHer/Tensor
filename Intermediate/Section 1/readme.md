@@ -33,3 +33,14 @@
 >>    - How?
 >>    - Using Activation Function(활성함수) : 공간을 분할한다
    
+활성함수(Activation Function)
+- 0보다 크면 1, 작으면 0 또는 -1이라는 값을 내보낸다
+![image](https://user-images.githubusercontent.com/107015573/215389023-48c363b6-3324-4cc0-815d-707b16d66fd6.png)
+
+- Threshold(Step function) : 미분이 불가능
+- Logistic : Step Function에서 미분이 가능하도록 만들어짐
+  - 단점 : 0과 1 사이에서 해결이 안되는 것들이 있다
+- Tanh : 범위를 음수의 영역까지 늘린 것
+![image](https://user-images.githubusercontent.com/107015573/215389292-f1ecf285-67f4-4ab3-b0bc-9e9ab14f41d1.png)
+x 1,2,3번이 있다
+각 위치에 해당하는 값에 절편(-1.5)를 넣어 계산하면 위에 표와 같이 각 활성함수마다 값이 다르게 나온다
