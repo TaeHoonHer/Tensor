@@ -16,4 +16,5 @@
 
 분류 : Cross-Entrophy
 회귀 : MSE(Mean Squared Error)
+
 ![image](https://user-images.githubusercontent.com/107015573/215405286-8593c75f-e45b-4ef5-92b8-eef779468eb9.png)
