@@ -27,6 +27,8 @@ Hidden Units
 
 ### Output Layer에서 activation function의 역할
 - class를 분류하는 역할(ex : 남자인가 여자인가, 암인가 아닌가, 아픈가 안아픈가)
+
+
 ![image](https://user-images.githubusercontent.com/107015573/215404399-1efaafe4-40ec-4ec4-9b72-f736d30c6bec.png)
 
 - Output은 위에서 MLP 결과값을 본 것처럼 한다
@@ -34,3 +36,10 @@ Hidden Units
 - Sigmoid는 0과 1사이에서 bound된다. 2-1번클래스가 될 확률을 통해 클래스를 분류했다
 
 Hidden에서는 정보가 얼마나 강하게 들어오는가를 판별해준다면(정보의 중요성) Output에서는 class를 구분하는 분류
+
+
+위에서 선을 활용하여 나누는 이진분류(binary classification)의 경우 대상이 여러개면 분류를 함에 있어 문제가 발생한다. class가 사람, 개, 고양이 3개라면 이진분류로 해결을 하기 힘들다
+
+클래스가 3개이상 = Multi-class classification
+
+이럴때는 Output의 개수는 Class 개수만큼 준다 == Ouput마다 각각의 Class를 담당하도록 만든다
