@@ -24,3 +24,13 @@ input과 가중치를 summation한 값이 바로 출력되는 것이 아닌, act
 Hidden Units
 - Activation function  
   - 들어오는 자극(data)가 크면 positive 값으로 활성화 시킨다- 비선형 transform[이를 위해 Activation function은 Sigmoid, tanh, ReLU를 사용]
+
+### Output Layer에서 activation function의 역할
+- class를 분류하는 역할(ex : 남자인가 여자인가, 암인가 아닌가, 아픈가 안아픈가)
+![image](https://user-images.githubusercontent.com/107015573/215404399-1efaafe4-40ec-4ec4-9b72-f736d30c6bec.png)
+
+- Output은 위에서 MLP 결과값을 본 것처럼 한다
+- Sigmoid 사용했을 때 class 1,2가 있다 가정, 
+- Sigmoid는 0과 1사이에서 bound된다. 2-1번클래스가 될 확률을 통해 클래스를 분류했다
+
+Hidden에서는 정보가 얼마나 강하게 들어오는가를 판별해준다면(정보의 중요성) Output에서는 class를 구분하는 분류
